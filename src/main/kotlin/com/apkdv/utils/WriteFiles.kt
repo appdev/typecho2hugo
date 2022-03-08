@@ -64,7 +64,7 @@ ${
 cover: 
     image: "${item.image}"
     # alt: "alt text" # image alt text
-    caption: "display caption under cover" # display caption under cover
+    # caption: "display caption under cover" # display caption under cover
     relative: false # when using page bundles set this to true
             """.trimIndent()
             } else {
