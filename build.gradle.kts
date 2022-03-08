@@ -17,6 +17,7 @@ dependencies {
     implementation("org.jetbrains.exposed", "exposed-dao", "0.37.3")
     implementation("org.jetbrains.exposed", "exposed-jdbc", "0.37.3")
     implementation("org.xerial:sqlite-jdbc:3.36.0.1")
+    implementation("mysql:mysql-connector-java:8.0.28")
     implementation("org.slf4j:slf4j-simple:1.8.0-beta4")
     implementation("com.youbenzi:MDTool:1.2.4")
     implementation("com.squareup.okhttp3:okhttp:4.9.3")
