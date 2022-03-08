@@ -8,7 +8,7 @@
 
 ### 连接 typecho 数据库
 
-> 因为我用的是 sqlite 如果你同样也是 sqlite 将数据库放在一下目录即可
+> 因为我用的是 sqlite 如果你同样也是 sqlite 将数据库放在/data/目录即可
 
 ![](screenshots/13.png)
 
