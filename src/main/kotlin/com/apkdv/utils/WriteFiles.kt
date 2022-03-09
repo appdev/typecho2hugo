@@ -57,7 +57,7 @@ tags: [${item.categories.joinToString(",")}]
 showToc: true
 TocOpen: true
 draft: false
-description: "${item.description}"
+# description: "${item.description}"
 ${
             if (item.image?.isNotEmpty() == true) {
 """
