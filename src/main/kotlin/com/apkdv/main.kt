@@ -13,7 +13,6 @@ import java.nio.file.Paths
 suspend fun main() {
     val imageFile = File("images/")
     val articleFile = File("file/")
-    println(imageFile.absoluteFile)
     if (!imageFile.exists()) {
         withContext(Dispatchers.IO) {
             Files.createDirectory(Paths.get(imageFile.absolutePath))
@@ -24,10 +23,10 @@ suspend fun main() {
             Files.createDirectory(Paths.get(articleFile.absolutePath))
         }
     }
+
     DatabaseFactory.init()
 
     findAllTag()
     findAllRelat()
-
     findAll()
 }

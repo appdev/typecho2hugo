@@ -1,7 +1,7 @@
 package com.apkdv.model
 
 import com.apkdv.utils.DatabaseFactory
-import com.apkdv.utils.TimeUtils.millis2String
+import com.apkdv.utils.TimeUtils
 import com.apkdv.utils.WriteFiles.write
 import org.jetbrains.exposed.dao.IntEntity
 import org.jetbrains.exposed.dao.IntEntityClass
@@ -73,7 +73,7 @@ suspend fun findAll() {
                 val article = Article(
                     title = it.title,
                     slug = it.slug,
-                    created = millis2String(it.created.toLong()),
+                    created = TimeUtils.millis2String(it.created.toLong()),
                     text = it.text,
                     tags = result.tags.map { it.name }.toMutableList(),
                     categories = result.category.map { it.name }.toMutableList(),

@@ -14,6 +14,7 @@ import java.util.*
 private val client by lazy { OkHttpClient() }
 
 fun downloadPicture(url: String): GiteeResult.Content {
+    println("downloadPicture url: $url")
     val request = Request.Builder().get()
         .url(url)
         .build()
