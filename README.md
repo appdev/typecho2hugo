@@ -22,7 +22,7 @@
 
 目前是将图片上传到 gitee，修改下面的配置即可  
 
-如果需要其他图床，也可以修改`uploadImageToGitee`方法
+如果需要其他图床，也可以修改`/utils/uploadImageToGitee`方法
 
 ![](screenshots/12.png)
 
